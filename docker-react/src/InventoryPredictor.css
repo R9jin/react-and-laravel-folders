@@ -1,0 +1,112 @@
+    /* Dashboard container */
+    .dashboard-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+    }
+
+    /* Heading */
+    .dashboard-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f1f1f;
+    }
+
+    /* Predict button */
+    .dashboard-container button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    margin-bottom: 30px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .dashboard-container button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* make all cards in a row equal height */
+    }
+
+    .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* push Reorder badge to bottom */
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%; /* stretch to match tallest in the row */
+    }
+
+    .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.3; /* reduce jagged spacing */
+    }
+
+    .product-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #333;
+    }
+
+    .prediction {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0; /* keep badge at bottom */
+    }
+
+    .prediction.reorder {
+    background: #fee2e2;
+    color: #b91c1c;
+    }
+
+    .prediction.ok {
+    background: #e0f7fa;
+    color: #00695c;
+}
+
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .dashboard-container h1 {
+        font-size: 22px;
+    }
+
+    .dashboard-container button {
+        font-size: 14px;
+    }
+    }
