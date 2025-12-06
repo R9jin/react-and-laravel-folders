@@ -1,0 +1,40 @@
+# React
+docker-react/node_modules/
+docker-react/src/CCS112_Case-Study_E-Commerce_G10/
+docker-react/build/
+docker-react/dist/
+docker-react/.env
+
+# Laravel / PHP
+docker-php83/vendor/
+docker-php83/node_modules/
+docker-php83/src/storage/*.key
+docker-php83/src/storage/*.log
+docker-php83/src/storage/framework/sessions/*
+docker-php83/src/storage/framework/views/*
+docker-php83/src/storage/framework/cache/*
+docker-php83/src/.env
+
+
+# OS / System
+*.log
+*.tmp
+desktop.ini
+.DS_Store
+
+# Node / Composer
+node_modules/
+vendor/
+
+# Laravel storage (project root)
+storage/*.key
+storage/*.log
+storage/framework/sessions/*
+storage/framework/views/*
+storage/framework/cache/*
+
+# Build artifacts (project root)
+build/
+dist/
+
+testECOMMERCE
