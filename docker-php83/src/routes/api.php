@@ -41,7 +41,8 @@ Route::middleware('auth:sanctum')->group(function () {
     // Orders
     Route::post('/orders', [OrderController::class, 'store']);
     Route::get('/orders', [OrderController::class, 'index']);
-
+    Route::put('/orders/{order}', [OrderController::class, 'update']);
+    
     // Authenticated user info
     // ✅ PASTE IT HERE:
     Route::put('/user', [AuthController::class, 'update']); 
